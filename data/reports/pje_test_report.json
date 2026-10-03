@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-06-03T16:50:19.842836",
+  "plan_id": "ed392c28",
+  "total_steps": 3,
+  "passed": 2,
+  "failed": 1,
+  "steps": [
+    {
+      "num": 1,
+      "label": "Inicializar orquestrador",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "num": 2,
+      "label": "Executar goal",
+      "ok": false,
+      "detail": "49.3s — plan_id=ed392c28"
+    },
+    {
+      "num": 3,
+      "label": "Shutdown orquestrador",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "overall_success": false
+}

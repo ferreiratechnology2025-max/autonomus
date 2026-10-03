@@ -1,0 +1,14 @@
+Como Iniciar (Produção)
+bash
+
+cd D:\Autonomus
+.\venv\Scripts\activate
+ollama serve  # em segundo plano
+python -m src.main
+
+Próximos Passos (Opcionais, Pós-Homologação)
+Item	Prioridade	Motivo
+Teste real no PJe	Alta	Validar com DOM real do governo
+Expandir para e-SAJ	Média	Segundo sistema jurídico alvo
+Audit log encadeado	Baixa	Compliance adicional
+Empacotamento (exe)	Baixa	Distribuição para não-desenvolvedores

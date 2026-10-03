@@ -1,0 +1,8 @@
+{
+  "visual_divergence": 0.3,
+  "historical_fail_rate": 0.25,
+  "compensation_available": -0.15,
+  "sensitive_data_detected": 0.488125,
+  "action_is_destructive": 0.41113,
+  "window_changed": 0.2
+}

@@ -1,0 +1,61 @@
+{
+  "total_elapsed_ms": 6016.0,
+  "steps": [
+    {
+      "name": "launch_browser",
+      "status": "ok",
+      "elapsed_ms": 812.0,
+      "error": null,
+      "metadata": {
+        "is_healthy": true,
+        "url": "about:blank"
+      }
+    },
+    {
+      "name": "tribunal_pje.tjpr.jus.br",
+      "status": "ok",
+      "elapsed_ms": 3047.0,
+      "error": null,
+      "metadata": {
+        "texto_len": 385394,
+        "healthy": true,
+        "url_final": "https://consulta.tjpr.jus.br/projudi_consulta/processo/consultaPublica.do?actionType=listarPjeProjudi"
+      }
+    },
+    {
+      "name": "texto_inicial",
+      "status": "ok",
+      "elapsed_ms": 16.0,
+      "error": null,
+      "metadata": {
+        "detail": "texto (385394 chars): Processos Importados do PJe |  \tCom a desativação do Sistema PJe no Tribunal de Justiça do Estado do Paraná, todos os processos que lá tramitaram foram importados para o Sistema Projudi. Entretanto, em algumas situações o processo pode ter sido importado com uma numeração diferente. | Abaixo estão listados os números do processo no PJe com a sua respectiva numeração de importação no Projudi. | Caso deseje, utilize o campo abaixo para filtrar a listagem. |  | Número do Processo:\t |  |  |  \t   |  |  |  | Número do Proces"
+      }
+    },
+    {
+      "name": "preencher_filtro_tjpr",
+      "status": "ok",
+      "elapsed_ms": 1047.0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "name": "extrair_resultado_tjpr",
+      "status": "ok",
+      "elapsed_ms": 219.0,
+      "error": null,
+      "metadata": {
+        "rows_found": 7401,
+        "texto_len": 385394
+      }
+    },
+    {
+      "name": "texto_final",
+      "status": "ok",
+      "elapsed_ms": 31.0,
+      "error": null,
+      "metadata": {
+        "detail": "texto (385394 chars): Processos Importados do PJe |  \tCom a desativação do Sistema PJe no Tribunal de Justiça do Estado do Paraná, todos os processos que lá tramitaram foram importados para o Sistema Projudi. Entretanto, em algumas situações o processo pode ter sido importado com uma numeração diferente. | Abaixo estão listados os números do processo no PJe com a sua respectiva numeração de importação no Projudi. | Caso deseje, utilize o campo abaixo para filtrar a listagem. |  | Número do Processo:\t |  |  |  \t   |  |  |  | Número do Proces"
+      }
+    }
+  ]
+}

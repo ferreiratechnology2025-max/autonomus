@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sandbox PJe - Teste Jarvis v3</title>
+    <style>
+        body { font-family: Arial; padding: 20px; max-width: 600px; margin: 0 auto; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        select, input { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        button { background: #0066cc; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+        .result { margin-top: 20px; padding: 10px; background: #f0f0f0; border-radius: 4px; }
+        #status { font-weight: bold; color: green; }
+    </style>
+</head>
+<body>
+    <h1>Sandbox PJe - Teste de Dropdown</h1>
+
+    <div class="form-group">
+        <label for="state-dropdown">Estado/Tribunal:</label>
+        <select id="state-dropdown">
+            <option value="">Selecione...</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR" selected>Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="process-input">Número do Processo:</label>
+        <input type="text" id="process-input" placeholder="Ex: 0001234-12.2024.8.16.0000">
+    </div>
+
+    <button id="consultar-btn">Consultar</button>
+
+    <div class="result">
+        <span id="status">Aguardando consulta...</span>
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        document.getElementById('consultar-btn').addEventListener('click', function() {
+            const uf = document.getElementById('state-dropdown').value;
+            const processo = document.getElementById('process-input').value;
+
+            if (!uf || !processo) {
+                document.getElementById('status').innerHTML = 'Preencha UF e Processo';
+                document.getElementById('resultado').innerHTML = '';
+                return;
+            }
+
+            document.getElementById('status').innerHTML = 'Consulta realizada com sucesso!';
+            const sel = document.getElementById('state-dropdown');
+            document.getElementById('resultado').innerHTML =
+                '<strong>Tribunal:</strong> ' + sel.options[sel.selectedIndex].text + '<br>' +
+                '<strong>Processo:</strong> ' + processo + '<br>' +
+                '<strong>Situacao:</strong> Em andamento (sandbox)';
+        });
+    </script>
+</body>
+</html>

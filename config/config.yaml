@@ -1,0 +1,13 @@
+environment: development
+log_level: DEBUG
+data_dir: data
+screen_capture_interval_ms: 1000
+tesseract_path: tesseract
+ocr_language: eng
+screen_capture_quality: 80
+enable_ocr_fallback: true
+action_timeout_ms: 5000
+safe_click_margin: 10
+mouse_move_duration: 0.2
+type_interval: 0.05
+enable_compensation: true

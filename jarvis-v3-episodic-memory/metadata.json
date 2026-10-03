@@ -1,0 +1,6 @@
+{
+  "name": "JARVIS V3 Episodic Memory",
+  "description": "Cibernético e industrial painel de busca semântica t-SNE e controle de heurísticas de automação de incidentes para o Jarvis V3.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

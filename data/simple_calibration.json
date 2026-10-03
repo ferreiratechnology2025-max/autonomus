@@ -1,0 +1,14 @@
+{
+  "hash_no_decay": {
+    "count": 6,
+    "last_override_timestamp": 1779478098.093984
+  },
+  "hash_decay": {
+    "count": 4,
+    "last_override_timestamp": 1779478098.1034687
+  },
+  "hash_multi": {
+    "count": 6,
+    "last_override_timestamp": 1779478098.1140847
+  }
+}
